@@ -1,5 +1,8 @@
 // vue.config.js
 module.exports = {
+   publicPath: process.env.NODE_ENV === 'production'
+    ? '/kinmoulam/'
+    : '/'	
   chainWebpack: config => {
     config
     .plugin('html')
